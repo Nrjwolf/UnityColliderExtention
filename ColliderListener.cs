@@ -37,7 +37,7 @@ public class ColliderListener : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D collider)
     {
-        onTriggerEnter2D(collider);
+        onTriggerStay2D(collider);
     }
 
     public void OnTriggerExit2D(Collider2D collider)
