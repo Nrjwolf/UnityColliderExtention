@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class ColliderListener : MonoBehaviour
 {
-    public Action<Collision2D> onCollisionEnter2D;
-    public Action<Collision2D> onCollisionStay2D;
-    public Action<Collision2D> onCollisionExit2D;
+    public Action<Collision2D> onCollisionEnter2D = delegate {};
+    public Action<Collision2D> onCollisionStay2D = delegate {};
+    public Action<Collision2D> onCollisionExit2D = delegate {};
 
-    public Action<Collider2D> onTriggerEnter2D;
-    public Action<Collider2D> onTriggerStay2D;
-    public Action<Collider2D> onTriggerExit2D;
+    public Action<Collider2D> onTriggerEnter2D = delegate {};
+    public Action<Collider2D> onTriggerStay2D = delegate {};
+    public Action<Collider2D> onTriggerExit2D = delegate {};
 
     //--- Collision2D ---//
 
